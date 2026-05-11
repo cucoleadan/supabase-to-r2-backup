@@ -2,6 +2,8 @@
 
 Free automated PostgreSQL database backups from Supabase to Cloudflare R2 storage, powered by GitHub Actions. Zero infrastructure, zero cost. Set up in 5 minutes.
 
+> **Status:** Scheduled backups are **DISABLED**. The workflow requires repository secrets before it can run. See [Quick Start](#quick-start) to configure them. Manual runs from the Actions tab will fail until secrets are added.
+
 ## Why This Exists
 
 Supabase's free tier doesn't include automated backups. If your database gets corrupted or you accidentally drop a table, you're out of luck. This workflow dumps your entire database (roles, schema, and data) to Cloudflare R2 every day, giving you point-in-time recovery without paying for Supabase's backup add-on.
